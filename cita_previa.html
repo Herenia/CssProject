@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Proyecto de sitio web MILO ACCESORIOS: tienda de bisutería y avalorios -->
+<html lang="es-ES">
+	<head>
+		<title>Milo Accesorios</title>		
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Quies es Milo accesorios">
+		<meta name="application-name" content="www.miloaccesorios.com">
+		<meta name="keywords" content="milo accesorios">
+		<meta name="generator" content="Notepad++">
+		<meta name="author" content="Juliana Sarabia">
+        <script src="https://kit.fontawesome.com/354a34164b.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="./css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Barlow&family=Dosis&family=Montserrat&family=Ms+Madi&family=Passions+Conflict&family=Qwitcher+Grypen&family=Reem+Kufi+Ink&family=Roboto&display=swap" rel="stylesheet">
+		<link rel="icon" href="./img/Milo LOGO.ico" type="image/x-icon" sizes="16x16"> 
+        <link rel="stylesheet" type="text/css" href="./css/registro_usuario.css">
+
+        <script>
+            function mialerta() {  
+                alert("Solicitud de cita enviada correctamente");
+            } 
+        </script>
+	</head>
+	<body>
+        <header class="header">
+            <div class="menu margen-interno">
+                <a class="logo" href="index.html">
+                        <img class="logo-img" src="./img/logo-para-fondo-negro-roboto.png" alt="logo de milo alas de angel">
+                </a>
+                <nav class="nav-header">
+                    <ul>
+                        <li><a href="./index.html"><i class="fa-solid fa-house"></i><span class="off"> Inicio</span></a></li>
+                        <li><a href="nosotros.html"><i class="fa-solid fa-user"></i><span class="off"> Nosotros</span></a></li>
+                        <li><a href="./index.html#ir_a_categorias"><i class="fa-regular fa-gem"></i><span class="off"> Categorías</span></a>
+                            <ul>
+                                <li><a href="collares.html">Collares</a></li>
+                                <li><a href="pulseras.html">Pulseras</a></li>
+                                <li><a href="pendientes.html">Pendientes</a></li>
+                                <li><a href="otrosaccesorios.html">Otros accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#"><i class="fa-solid fa-hands-holding-circle"></i><span class="off">Cita Previa</span></a></li>
+                        <li><a href="./contacto.html"><i class="fa-regular fa-envelope"></i><span class="off"> Contacto</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+		<main>
+            <br>
+            <br>
+            <h2 class="main-h2">Vive la experiencia de ser atendido personalmente</h2>
+            <section class="form_wrap" id="formul">
+
+                <section class="cantact_info">
+                    <section class="info_title">
+                        <span class="fa fa-user-circle"></span>
+                        <h2>PIDE <br>UNA CITA<br></h2>
+                    </section>
+                    <section class="info_items">
+                        <p><span class="fa fa-envelope"></span> info@miloaccesorios.com</p>
+                        <p><span class="fa fa-mobile"></span> +34(600)00 00 00 /p>
+                    </section>
+                </section>
+        
+                <form action="" class="form_contact" id="formul">
+                    <h2>Agenda una cita personalizada</h2>
+                    <div class="user_info">
+                        <label for="names">Nombres *</label>
+                        <input type="text" id="names">
+        
+                        <label for="phone">Telefono Móvil</label>
+                        <input type="text" id="phone">
+
+
+        
+                        <label for="email">Correo electronico *</label>
+                        <input type="text" id="email">
+
+          <label for="fecha">Fecha de Cita*</label>
+                        <input type="date" id="fecha">
+
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje"></textarea>
+
+                      
+
+
+                        <input type="reset" value="Enviar" id="btnSend" onclick="mialerta()">
+                    </div>
+                </form>
+                
+            </section>
+          
+           
+        </main>
+        <footer class="footer margen-interno">
+            <h3 class="subtitulo">&copy; Milo accesorios by <span> Juliana Sarabia</span></h3>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/miloaccesorio/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./js/form.js"></script>
+	</body>
+</html>

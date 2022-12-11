@@ -1,0 +1,339 @@
+/* font-family: 'Aref Ruqaa Ink', serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ms Madi', cursive;
+font-family: 'Passions Conflict', cursive;
+font-family: 'Qwitcher Grypen', cursive;
+font-family: 'Reem Kufi Ink', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@font-face {
+    font-family: 'adelia';
+    src: url('../font/adelia.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Alexandra';
+    src: url('../font/Alexandra.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Thank_you';
+    src: url('../font/Thank\ you.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    height: 100vh;
+    
+}
+a,li {
+    text-decoration: none; 
+}
+
+/*************************************************************************************** */
+/* **************    estilos del header  *********************************************** */
+/*************************************************************************************** */
+
+.header {
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+    .menu {
+        background: rgba(67, 64, 64, 0.3);
+        padding: 0 15px;
+        display: flex;
+        flex-flow: row;
+        height: 80px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+        .logo-img {
+            padding: 0.8vh;
+            height: 10vh;
+        }
+
+        .nav-header {
+            flex: grow 2;
+        }
+        .nav-header ul {
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        .nav-header ul li {
+            flex: 5 1 auto;
+            text-align: center;
+            list-style: none;
+        }
+            .nav-header ul li a {
+                color:#ffffff;
+                font-size: 0.75em;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .nav-header ul li a:hover {
+                color: rgb(97, 206, 231); 
+                font-weight: bolder;
+                text-shadow: black 0.1em 0.1em 0.2em
+            }
+            .nav-header ul li ul {
+                display:none;
+                position: absolute;
+                width: fit-content;
+                min-height: fit-content;
+                padding: 5vh 0;
+                margin-left: -0.2px;
+            }
+            .nav-header ul li ul li {
+                padding: 1vh 0;
+                font-size: 0.9em;
+                text-align: left;
+                background: rgba(131, 126, 126, 0.3);
+            }
+            .nav-header li:hover > ul {
+              
+                display:block;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.237);
+            }
+/*************************************************************************************** */
+/* **************    estilos del main  ************************************************** */
+/*************************************************************************************** */
+
+.contenedor-principal {
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.aside-menu ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.aside-menu ul li {
+    padding: 10px;
+}
+.aside-menu ul li a {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.aside-menu ul li a:hover {
+    color: #fff; 
+    background-color: #000;    
+}
+
+.contenedor-collares {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.collares-h2{
+    color:#1e1717;
+    font-size: 2.5em;
+    margin: 40px 0;
+    text-shadow:none;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Thank_you';
+}
+    .detalle-collares {
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: #e8eae0;
+        flex: 1 1 30%;
+        margin:10px 15px;
+    }
+    .detalle-collares:hover {
+        background: #d7d5dd;
+        color: #61cee7; ;
+        border: 0.03em solid #bab8c0;
+    }
+    .img-collares {
+        height:100%;
+        width:100%;
+    }
+    .detalle-collares a:hover .img-collares {
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+        transition:all .5s ease-in-out;
+    }
+    .detalle-collares a {
+        overflow:hidden;
+    }
+    .detalle-collares h2 {
+        font-family: 'Dosis', sans-serif;
+        padding-left: 0.5em;
+    }
+    .detalle-collares p {
+        padding: 5px 10px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #383636;
+        font-size: 13px;
+        margin: 5px;
+        text-align: justify;
+    }
+
+
+
+
+
+
+
+
+/*************************************************************************************** */
+/* **************    estilos del footer  ************************************************** */
+/*************************************************************************************** */          
+.footer {
+    background: rgba(67, 64, 64, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 3vh;;
+}
+    .subtitulo{
+        font-size: 0.9em;
+        width: 80%;
+    }
+    .subtitulo span {
+        font-family: adelia;
+        font-size: 1em;
+    }
+    .social {
+        display: flex;
+    }
+        .social a{
+            flex: 1 1 auto;
+            font-size: 1.5em;
+            color:#6e43ee;
+            padding: 0 10px;
+        }
+        .social a:hover {
+            color: rgb(97, 206, 231); 
+            font-weight: bolder;
+            text-shadow: black 0.1em 0.1em 0.2em
+        }
+        
+    
+
+ /* MEDIA QUERY  */
+@media all and (max-width: 1120px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column nowrap;
+        height: auto;
+    }
+    .aside {
+        display:flex;
+        justify-content: center;
+    }
+    h1{
+        font-size:15px;
+    }
+}
+
+@media all and (max-width: 950px) {
+    .nav-header ul li {
+        flex-direction: row;
+    }
+    .aside {
+        display:flex;
+        justify-content: center;
+    }
+    h1{
+        font-size:15px;
+    }
+    .form-Newsletter {
+        width: 50%;
+    }
+}@media all and (max-width: 878px) {
+    
+    .nav-header ul li a i {
+        display:none;
+    }
+    .nav-header ul li ul {
+        padding: 5vh 0;
+    }
+    .nav-header ul li ul li {
+        padding: 5px 1px;
+        text-align: left;
+        background: rgba(131, 126, 126, 0.3);
+    }
+}
+@media all and (max-width: 750px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .articulos {
+        flex-direction: column;
+    }
+    .off {
+        display: none;
+    }
+    .nav a {
+        font-size: 20px;
+    }
+    .nav-header ul li ul {
+        display:none;
+        position: absolute;
+        width: fit-content;
+        padding: 5px;
+    }
+    .nav-header ul li a i {
+        display:flex;
+        justify-content: center;
+        padding: 0 3vh;
+        font-size: 1.5em;
+    }
+    .nav-header ul li ul li {
+        padding: 2px;
+        text-align: left;
+        font-size: 1em;
+    }
+    
+    .form-Newsletter {
+        width: 60%;
+    }
+    .fieldset-Newsletter input.envio-Newsletter  {
+        width:50%;
+    }  
+}
+
+@media all and (max-width: 600px) {
+    .aside {
+        flex-direction: column;
+    }
+    .form-Newsletter {
+        width: 80%;
+    }
+    .fieldset-Newsletter input.envio-Newsletter  {
+        width:35%;
+    }            
+}

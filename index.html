@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Proyecto de sitio web MILO ACCESORIOS: tienda de bisutería y avalorios -->
+<html lang="es-ES">
+	<head>
+		<title>Milo Accesorios</title>		
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Milo accesorios">
+		<meta name="application-name" content="www.miloaccesorios.com">
+		<meta name="keywords" content="milo accesorios">
+		<meta name="generator" content="Notepad++">
+		<meta name="author" content="Juliana Sarabia">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Barlow&family=Dosis&family=Montserrat&family=Ms+Madi&family=Passions+Conflict&family=Qwitcher+Grypen&family=Reem+Kufi+Ink&family=Roboto&display=swap" rel="stylesheet">
+		<link rel="icon" href="./img/Milo LOGO.ico" type="image/x-icon" sizes="16x16"> 
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script type="text/javascript" src="./js/regExp.js"></script>
+        <script src="https://kit.fontawesome.com/354a34164b.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <header class="header">
+            <div class="menu margen-interno">
+                <a class="logo" href="index.html">
+                        <img class="logo-img" src="./img/logo-para-fondo-negro-roboto.png" alt="logo de milo alas de angel">
+                </a>
+                <nav class="nav-header">
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i><span class="off"> Inicio</span></a></li>
+                        <li><a href="./nosotros.html"><i class="fa-solid fa-user"></i><span class="off"> Nosotros</span></a></li>
+                        <li><a href="#ir_a_categorias"><i class="fa-regular fa-gem"></i><span class="off"> Categorías</span></a>
+                            <ul>
+                                <li><a href="./collares.html">Collares</a></li>
+                                <li><a href="./pulseras.html">Pulseras</a></li>
+                                <li><a href="./pendientes.html">Pendientes</a></li>
+                                <li><a href="./otrosaccesorios.html">Otros accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="./cita_previa.html"><i class="fa-solid fa-hands-holding-circle"></i><span class="off"> Cita Previa</span></a></li>
+                        <li><a href="./contacto.html"><i class="fa-regular fa-envelope"></i><span class="off"> Contacto</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="texto-principal margen-interno">
+                <h1 class="h1-principal">Hecho a mano con amor</h1>
+                <div class="boton"><a href="./index.html#ir_a_categorias"></a></div>
+            </div>
+        </header>
+		<main class="padre">
+            <section class="section_previa margen-interno">
+                <h2>Un accesorio puede cambiar todo tu outfit y tu momento...</h2>
+                <article class="article-detalles">
+                    <img  class="imagen_de_chica" src="./img/detalles_mujer.jpg" alt="mujer con sombrero y collar">
+                    <div class="article-detalles-div">
+                        <p>Los pequeños detalles enamoran, porque marcan la diferencia y le confieren a la vida el estatus que le corresponde.</p>
+                        <p>Son el reflejo de la grandeza de las personas y de nuestra capacidad de amarnos a nosotros mismos de manera constante y sin condiciones, para poder amar a nuestro entorno de la misma manera.</p>
+                        <h4 class="descubrelo">Ámate</h4>
+                        <a href="#ir_a_categorias">  <p class="boton-coleccion">Descubre la colección</p></a>
+                    </div>
+                </article>
+            </section>
+            <section id="ir_a_categorias" class="section margen-interno" >
+                <h2 class="h2_categorias">Categorías</h2>
+                <div class="articulos">
+                    <article class="article">
+                        <a class="enlace-productos" href="./collares.html">
+                            <img src="./img/miloacc-29_mediana.jpg" alt="foto de collares">
+                            <h3>Para toda ocación</h3>
+                            <h2>Collares</h2>
+                            <p>Cada collar es una pieza única realizadas manualmente, de todos los tamaños. Con materiales naturales.</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a class="enlace-productos" href="./pulseras.html">
+                            <img src="./img/miloacc-127_mediana.jpg" alt="">
+                            <h3>Variedad</h3>
+                            <h2>Pulseras</h2>
+                            <p>Para toda ocación, personales, para parejas, amistad, en diversos materiales, metal, piedas, cuero cintas.</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a class="enlace-productos" href="./pendientes.html">
+                            <img src="./img/miloacc-102_mediani.jpg" alt="">
+                            <h3>Variedad</h3>
+                            <h2>Pendientes</h2>
+                            <p>Este accesorio enmarca tu rostro, pueden ser cortos, largos, medios, en diversos colores, de hilo, de piedras o cristal.</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a class="enlace-productos" href="./otrosaccesorios.html">
+                            <img src="./img/paragafas_mediano.jpeg" alt="">
+                            <h3>Variedad</h3>
+                            <h2>Otros accesorios</h2>
+                            <p>Puedes tener una linda cuerda para colgar tus gafas, llaves o cualquier objeto que no quieras perder de ista.</p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2 class="combinalos-h2">Combinalos todos a tu gusto</h2>
+                <div class="contenedor-galeria">
+                    <ul>
+                        <li>
+                            <div class="titulo-imagen">
+                                <a href="collares.html">Collar</a>
+                            </div>
+                                <img src="./img/jewellery-1639026_640.jpg">
+                        </li>
+                        <li>
+                            <div class="titulo-imagen">
+                                <a href="pulseras.html">Pulsera</a>
+                            </div>
+                            <img src="./img/market-2415282_1920.jpg">
+                        </li>
+                        <li>
+                            <div class="titulo-imagen">
+                                <a href="pendientes.html">Pendientes</a>
+                            </div>
+                            <img src="./img/tassels-3543675_1920.jpg">
+                        </li>
+                        <li>
+                            <div class="titulo-imagen">
+                                <a href="otrosaccesorios.html">Otros accesorios</a>
+                            </div>
+                            <img src="./img/otrosaccesorios/otrosaccesorios9.jpg">
+                        </li>
+                        <li>
+                            <div class="titulo-imagen">
+                                <a href="#ir_a_categorias">Combínalos</a>
+                            </div>
+                            <img src="./img/woman-g191d50f18_1280.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer margen-interno">
+            <h3 class="subtitulo">&copy; Milo accesorios by <span> Juliana Sarabia</span></h3>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/miloaccesorio/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./js/viewFormulario.js"></script>
+	</body>
+</html>
