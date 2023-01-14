@@ -35,6 +35,15 @@ body {
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     height: 100vh;
+    background-image: url("fondo3.jpg");
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+  background-size: 25rem;
+  background-repeat: repeat;
+  background-position: center center;
+  
+  color: #000;
     
 }
 a,li {
@@ -127,7 +136,10 @@ a,li {
     list-style: none;
     text-decoration: none;
 }
-
+.aside-menu ul li a:hover {
+    color: #fff; 
+    background-color: #000;   
+}
 .aside-menu ul li {
     padding: 10px;
 }
@@ -137,10 +149,7 @@ a,li {
     padding: 10px;
     letter-spacing: 2px;
 }
-.aside-menu ul li a:hover {
-    color: #fff; 
-    background-color: #000;   
-}
+
 .contenedor-pulseras {
     display: flex;
     justify-content:space-around;

@@ -34,6 +34,15 @@ font-family: 'Roboto', sans-serif; */
 body {
     font-family: Montserrat, sans-serif;
     font-weight: 600;
+    background-image: url("fondo3.jpg");
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+  background-size: 25rem;
+  background-repeat: repeat;
+  background-position: center center;
+  
+  color: #000;
     
 }
 a,li {
@@ -219,7 +228,7 @@ a,li {
 
     .section {
         /* background: #e8e3e3; */
-        background: #fff;
+        
         display: flex;
         flex-direction: column;
     }
@@ -228,7 +237,7 @@ a,li {
             font-size: 2.5em;
             margin: 20px 0 10px 0;
             text-shadow:none;
-            font-weight: 400;
+            font-weight: 800vh;
             text-align: center;
             font-family: 'Thank_you';
         }
@@ -303,7 +312,7 @@ a,li {
         font-size: 2em;
         margin: 40px 0;
         text-shadow:none;
-        font-weight: 400;
+        font-weight: 600;
         text-align: center;
         font-family: 'Thank_you';
     }
@@ -527,5 +536,17 @@ a,li {
     .article-detalles-div p {
         width: 45vh;
     }       
+
+    .ir-arriba {
+        display:none;
+        padding:20px;
+        background:#024959;
+        font-size:20px;
+        color:#fff;
+        cursor:pointer;
+        position: fixed;
+        bottom:20px;
+        right:20px;
+    }
 }
 
